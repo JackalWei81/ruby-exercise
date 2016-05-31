@@ -31,12 +31,18 @@ class MyCar
   def gas_miles(gas,miles)
     puts "每公升的油可以行駛:#{miles.to_f/gas}"
   end
+
+  def to_s
+    puts "MyCar's color is #{color} , year is #{year} , model is #{model}"
+  end
+
 end
 
 
 
 old_car = MyCar.new(2006,"black","solio")
 old_car.gas_miles(30,450)
+puts old_car
 
 
 
