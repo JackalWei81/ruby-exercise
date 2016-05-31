@@ -21,10 +21,17 @@ class MyCar
     @current_speed=0
   end
 
+  def spray_paint(car_color)
+    self.color = car_color
+  end
+
 end
 
 old_car = MyCar.new(2006,"black","solio")
 old_car.speed_up(60)
 puts old_car.current_speed
 
-#第1,2題一起完成了＠＠
+old_car.spray_paint("red")
+puts old_car.color
+
+#第1,2題,3一起完成了＠＠
