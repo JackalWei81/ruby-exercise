@@ -26,3 +26,5 @@ end
 old_car = MyCar.new(2006,"black","solio")
 old_car.speed_up(60)
 puts old_car.current_speed
+
+#第1,2題一起完成了＠＠
