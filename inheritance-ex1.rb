@@ -8,6 +8,11 @@ class Vehicle
   def self.gas_miles(gas,miles)
     puts "每公升的油可以行駛:#{miles.to_f/gas}"
   end
+
+  private
+  def years_old
+    Time.now.year - self.year
+  end
 end
 
 module Capacity
